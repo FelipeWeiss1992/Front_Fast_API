@@ -25,7 +25,7 @@ function get_all(){
            <td>${usuario.nome}</td>
            <td>${usuario.email}</td>
            <td class="alinhar__direita">
-               <a href="usuario_save.html?id=${usuario.id}">Editar</a> |
+               <a href="usuarios_save.html?id=${usuario.id}">Editar</a> |
                <button onclick='remove(${usuario.id})'>Deletar</button>
            </td>
        </tr>
