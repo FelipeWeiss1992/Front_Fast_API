@@ -8,13 +8,13 @@
     <title>Alunos</title>
 </head>
 <body>
-
-    <div>
+    <h1 style="text-align: center">Tabela de Alunos</h1>
+    <div style="margin: 50px;">
         <input type="text" name="id-busca" id="id-busca"  placeholder="Digite o id do Aluno">
         <button onclick="search()">Buscar</button>
     </div>
 
-    <table border="1">
+    <table class="table table-striped">
         <thead>
             <th>Id</th>
             <th>Nome</th>
@@ -26,8 +26,10 @@
         </tbody>
     </table>
 
+    
     <a href="aluno.html">Carregar Todos</a>
     <a href="aluno_save.html" mt="2">Cadastrar Aluno</a>
+    
     
     <script src="aluno.js"></script>
 
