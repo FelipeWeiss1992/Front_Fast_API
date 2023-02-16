@@ -24,7 +24,7 @@ function get_all(){
            <td>${aluno.id}</td>
            <td>${aluno.nome}</td>
            <td>${aluno.email}</td>
-           <td>
+           <td class="alinhar__direita">
                <a href="aluno_save.html?id=${aluno.id}">Editar</a> |
                <button onclick='remove(${aluno.id})'>Deletar</button>
            </td>
@@ -37,6 +37,7 @@ function get_all(){
 
 //Buscar por aluno
 function search(){
+   var api_url = 'http://localhost:8000/api/V1/alunos'
    //variavel id aluno acessando documento html acessando campo idbuscae seu valor
    let id_aluno = document.getElementById('id-busca').value;
    //imprimindo id_aluno
@@ -64,7 +65,7 @@ function search(){
        <td>${aluno.id}</td>
        <td>${aluno.nome}</td>
        <td>${aluno.email}</td>
-       <td>
+       <td class="alinhar__direita">
            <a href="aluno_save.html?id=${aluno.id}">Editar</a> |
            <button onclick='remove(${aluno.id})'>Deletar</button>
        </td>
